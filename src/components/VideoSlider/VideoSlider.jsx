@@ -12,14 +12,13 @@ import video8 from "../../videos/Roadhouse Blues.mp4";
 import styles from "./VideoSlider.module.css";
 const videos = [video1, video2, video3, video4, video5, video6, video7, video8];
 
-const VideoGallery = () => {
+const VideoSlider = () => {
   return (
     <div className="video-gallery">
       <Swiper
         className={styles.sliderBox}
         spaceBetween={30}
         slidesPerView={4}
-        navigation
         loop
         autoplay={{ delay: 3000 }}
       >
@@ -36,4 +35,4 @@ const VideoGallery = () => {
   );
 };
 
-export default VideoGallery;
+export default VideoSlider;
